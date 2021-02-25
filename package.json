@@ -1,0 +1,10 @@
+{
+  "name": "aliyun-fc-nodejs-runtime-initializer-not-invoked-in-sandbox-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "start": "fun local invoke"
+  }
+}

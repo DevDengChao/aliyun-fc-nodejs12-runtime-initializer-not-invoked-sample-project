@@ -1,0 +1,19 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  nodejs12-runtime: # service name
+    Type: 'Aliyun::Serverless::Service'
+    initializer-not-invoked-in-sandbox-env: # function name
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Initializer: index.initializer
+        InitializationTimeout : 3
+        Runtime: nodejs12
+        CodeUri: './'
+      Events:
+        http: # trigger name
+          Type: HTTP # http trigger
+          Properties:
+            AuthType: ANONYMOUS
+            Methods: [ 'GET' ]
