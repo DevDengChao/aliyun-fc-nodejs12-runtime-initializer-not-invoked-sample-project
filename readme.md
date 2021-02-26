@@ -46,7 +46,7 @@ Resources:
 
 复现步骤:
 
-0. 同 npm 安装 funcraft `npm i -g @alicould/fun`, 截至本项目公布时, fun 最新版本为 `3.6.21`.
+0. 通过 npm 安装 funcraft `npm i -g @alicould/fun`, 截至本项目公布时, fun 最新版本为 `3.6.21`.
 0. 在项目根目录下执行 `npm run start` 或直接执行 `fun local invoke` 触发异常:
 
    ```log
@@ -67,11 +67,11 @@ Resources:
    ```
    
 0. 根据 funcraft 源码 https://github.com/alibaba/funcraft/blob/master/src/lib/docker-opts.js#L73-L89, 
-   得知可以通过设置环境变量 FC_DOCKER_VERSION 指定使用的镜像版本.
+   得知可以通过设置环境变量 `FC_DOCKER_VERSION` 指定使用的镜像版本.
 
 0. 查询 https://hub.docker.com/r/aliyunfc/runtime-nodejs12/tags 得知最新版为 `1.9.14`.
 
-0. 设置环境变量 FC_DOCKER_VERSION 为 1.9.14 后再次调用 `fun local invoke`:
+0. 设置环境变量 `FC_DOCKER_VERSION` 为 `1.9.14` 后再次调用 `fun local invoke`:
 
     ```diff
     >fun local invoke
