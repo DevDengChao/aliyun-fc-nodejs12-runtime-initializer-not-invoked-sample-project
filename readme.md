@@ -46,7 +46,7 @@ Resources:
 
 复现步骤:
 
-0. 通过 npm 安装 funcraft `npm i -g @alicould/fun`, 截至本项目公布时, fun 最新版本为 `3.6.21`.
+0. 通过 npm 安装 funcraft `npm i -g @alicloud/fun`, 截至本项目公布时, fun 最新版本为 `3.6.21`.
 0. 在项目根目录下执行 `npm run start` 或直接执行 `fun local invoke` 触发异常:
 
    ```log
